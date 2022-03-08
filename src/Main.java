@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Utente nino= new Utente ("nino",avatar.GALLINA,censura.FAMILY,1234);
+        Utente nino= new Utente ("nino",avatar.GALLINA,censura.KID,1234);
         Utente gino =new Utente("Gino", avatar.GATTO, censura.FAMILY,0202);
         Utente pino = new Utente("Pino", avatar.GALLINA, censura.HARDCORE,0123);
 
@@ -14,9 +14,13 @@ public class Main {
 
         Serie BreakingBad = new Serie("Breaking bad",2015,genere.AZIONE,18,3,10);
 
-        nino.LaMiaLista(ReLeone, Matrix);
+        nino.LaMiaLista(ReLeone, BreakingBad);
+        gino.LaMiaLista(BreakingBad,Matrix);
 
         System.out.println(Arrays.toString(nino.getListaPref()));
+        System.out.println(Arrays.toString(gino.getListaPref()));
+
+
 
 
 

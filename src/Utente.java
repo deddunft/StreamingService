@@ -6,15 +6,15 @@ public class Utente {
     private avatar avatar;
     private censura censura;
     private int pin;
-    private Film[] listaPref;
+    private Prodotto[] listaPref;
 
     public Utente (String nomeU, avatar avatar, censura censura, int pin) {
         this.nomeU = nomeU;
         this.avatar = avatar;
         this.censura = censura;
         this.pin = pin;
-        this.listaPref= new Film[5];
     }
+
 
     public String getNomeU() {
         return nomeU;
@@ -48,7 +48,7 @@ public class Utente {
         this.pin = pin;
     }
 
-    public Film[] getListaPref() {
+    public Prodotto[] getListaPref() {
         return listaPref;
     }
 
@@ -56,11 +56,12 @@ public class Utente {
         this.listaPref = listaPref;
     }
 
-    public void LaMiaLista(Film film, Film film2){
-        Film[] films = {film,film2};
-        this.listaPref = films;
+    public void LaMiaLista(Prodotto prodotto, Prodotto prodotto2){
+        if (getCensura()== censura.FAMILY) {
 
-
+            Prodotto[] films = {prodotto, prodotto2};
+            this.listaPref = films;
+        }
 
     }
 
