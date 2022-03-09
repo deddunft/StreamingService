@@ -41,4 +41,10 @@ public class Lista {
         return listaPref[0].getTitolo()+" "+stelle[0]+" stelle" +
                 "\n"+listaPref[1].getTitolo()+" "+stelle[1]+" stelle";
     }
+
+
+
+
+
+
 }
