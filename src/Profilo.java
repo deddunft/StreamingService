@@ -48,8 +48,14 @@ public class Profilo {
         this.utente = utente;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Profilo{" +
+                "email='" + email + '\'' +
+                ", offerte=" + offerte +
+                ", utente=" + utente +
+                ", utente2=" + utente2 +
+                '}';
+    }
 
 }

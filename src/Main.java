@@ -18,6 +18,8 @@ public class Main {
         neviolista.sStelle(0);
         neviolista.sStelle(1);
         System.out.println(neviolista.Valutazioni());
+        System.out.println(Matrix);
+
 
 
 
