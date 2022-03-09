@@ -13,12 +13,12 @@ public class Main {
         Film Matrix = new Film("Matrix",2002,genere.AZIONE,16);
 
         Serie BreakingBad = new Serie("Breaking bad",2015,genere.AZIONE,18,3,10);
-
-        nino.LaMiaLista(ReLeone, BreakingBad);
-        gino.LaMiaLista(BreakingBad,Matrix);
-
-        System.out.println(Arrays.toString(nino.getListaPref()));
-        System.out.println(Arrays.toString(gino.getListaPref()));
+        Lista neviolista = new Lista(gino);
+        neviolista.LaMiaLista(Matrix,BreakingBad);
+        neviolista.sStelle(0);
+        neviolista.sStelle(1);
+        System.out.println(neviolista.Valutazioni());
+        
 
 
 

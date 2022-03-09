@@ -6,7 +6,8 @@ public class Utente {
     private avatar avatar;
     private censura censura;
     private int pin;
-    private Prodotto[] listaPref;
+
+    private int[] stellePref;
 
     public Utente (String nomeU, avatar avatar, censura censura, int pin) {
         this.nomeU = nomeU;
@@ -48,23 +49,6 @@ public class Utente {
         this.pin = pin;
     }
 
-    public Prodotto[] getListaPref() {
-        return listaPref;
-    }
-
-    public void setListaPref(Film[] listaPref) {
-        this.listaPref = listaPref;
-    }
-
-    public void LaMiaLista(Prodotto prodotto, Prodotto prodotto2){
-        if (getCensura()== censura.FAMILY) {
-
-            Prodotto[] films = {prodotto, prodotto2};
-            this.listaPref = films;
-        }
-
-    }
-
 
     @Override
     public String toString() {
@@ -73,7 +57,7 @@ public class Utente {
                 ", avatar=" + avatar +
                 ", censura=" + censura +
                 ", pin=" + pin +
-                ", listaPref=" + Arrays.toString(listaPref) +
+                ", stellePref=" + Arrays.toString(stellePref) +
                 '}';
     }
 }

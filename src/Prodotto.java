@@ -49,12 +49,15 @@ public abstract class Prodotto {
 
 
 
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Prodotto{" +
+                "titolo='" + titolo + '\'' +
+                ", anno=" + anno +
+                ", genere=" + genere +
+                ", pg=" + pg +
+                ", profilo=" + profilo +
+                ", utente=" + utente +
+                '}';
+    }
 }
