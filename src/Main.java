@@ -18,7 +18,7 @@ public class Main {
         neviolista.sStelle(0);
         neviolista.sStelle(1);
         System.out.println(neviolista.Valutazioni());
-        UtentePremium lino = new UtentePremium("Lof",avatar.ORSETTO,censura.HARDCORE,1234);
+        UtentePremium lino = new UtentePremium("Loffio",avatar.ORSETTO,censura.HARDCORE,1234);
 
         Prodotto[] catalogo = {Matrix,BreakingBad,ReLeone};
         lino.GeneriA(catalogo);
