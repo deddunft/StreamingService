@@ -39,6 +39,6 @@ public class Lista {
     }
     public String Valutazioni(){
         return listaPref[0].getTitolo()+" "+stelle[0]+" stelle" +
-                "  "+listaPref[1].getTitolo()+" "+stelle[1]+" stelle";
+                "\n"+listaPref[1].getTitolo()+" "+stelle[1]+" stelle";
     }
 }
