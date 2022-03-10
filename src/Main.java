@@ -23,12 +23,18 @@ public class Main {
         fulvio.sStelle(1);
         System.out.println(fulvio.Valutazioni());
         UtentePremium lino = new UtentePremium("Loffio",avatar.ORSETTO,censura.HARDCORE,1234);
+        UtentePremium roger = new UtentePremium("Roger",avatar.CANE,censura.FAMILY,4586);
 
         Prodotto[] catalogolino = {ReLeone};
         Prodotto[] catt = {Shrek,Matrix,Porta,EvaVsSelen};
         lino.LaMiaLista(ReLeone,Porta);
-        Catalogo cat1 = new Catalogo(catt);
+        roger.LaMiaLista(EvaVsSelen,sqaurto);
+        Catalogo cat1 = new Catalogo(lino.getListaPref());
         System.out.println(Arrays.toString(cat1.listaConsigio(lino)));
+        Catalogo cat2 = new Catalogo(roger.getListaPref());
+        System.out.println(Arrays.toString(cat2.Prefe(roger,lino)));
+
+
 
 
 

@@ -42,4 +42,5 @@ public class Lista {
                 "\n"+listaPref[1].getTitolo()+" "+stelle[1]+" stelle";
     }
 
+
 }

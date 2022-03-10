@@ -26,6 +26,21 @@ public class Catalogo {
 
     }
 
+    public Prodotto[] Prefe(UtentePremium utente,UtentePremium utente2){
+        Prodotto[] prefe = new Prodotto[3];
+        for (int i = 0; i < utente.getListaPref().length; i++)
+            for (int j = 0; j < utente2.getListaPref().length; j++)
+
+
+                if (utente.getListaPref()[i].getTitolo() == utente2.getListaPref()[j].getTitolo()){
+                    prefe[i] = utente.getListaPref()[i];
+                }
+        return prefe;
+
+
+    }
+
+
     @Override
     public String toString() {
         return "Catalogo{" +

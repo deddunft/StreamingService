@@ -4,8 +4,6 @@ public abstract class Prodotto {
     private int anno;
     private genere genere;
     private int pg;
-    private Profilo profilo;
-    private Utente utente;
 
     public Prodotto(String titolo, int anno, genere genere, int pg) {
 
@@ -55,8 +53,6 @@ public abstract class Prodotto {
                 ", anno=" + anno +
                 ", genere=" + genere +
                 ", pg=" + pg +
-                ", profilo=" + profilo +
-                ", utente=" + utente +
                 '}';
     }
 }
