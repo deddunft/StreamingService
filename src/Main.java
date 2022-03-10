@@ -11,6 +11,10 @@ public class Main {
 
         Film ReLeone = new Film("Re Leone",1998,genere.ANIMAZIONE,5);
         Film Matrix = new Film("Matrix",2002,genere.AZIONE,16);
+        Film EvaVsSelen = new Film("Eva vs Selen",2003,genere.HARD,18);
+        Film Shrek = new Film("Shrek",2005,genere.ANIMAZIONE,05);
+        Film Porta = new Film("Non Aprite Quella Porta",2012,genere.HORROR,18);
+        Film sqaurto = new Film("Squarato",2020,genere.HORROR,18);
 
         Serie BreakingBad = new Serie("Breaking bad",2015,genere.AZIONE,18,3,10);
         UtenteStandard fulvio = new UtenteStandard("fulvio",avatar.ORSETTO,censura.HARDCORE,1423);
@@ -20,8 +24,11 @@ public class Main {
         System.out.println(fulvio.Valutazioni());
         UtentePremium lino = new UtentePremium("Loffio",avatar.ORSETTO,censura.HARDCORE,1234);
 
-        Prodotto[] catalogo = {Matrix,BreakingBad,ReLeone};
-        lino.GeneriA(catalogo);
+        Prodotto[] catalogolino = {ReLeone};
+        Prodotto[] catt = {Shrek,Matrix,Porta,EvaVsSelen};
+        lino.LaMiaLista(ReLeone,Porta);
+        Catalogo cat1 = new Catalogo(catt);
+        System.out.println(Arrays.toString(cat1.listaConsigio(lino)));
 
 
 

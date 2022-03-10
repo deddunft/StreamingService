@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class UtenteStandard extends Utente {
@@ -32,11 +33,25 @@ public class UtenteStandard extends Utente {
 
             Prodotto[] films = {prodotto, prodotto2};
             this.listaPref = films;
-
-
     }
     public String Valutazioni(){
         return listaPref[0].getTitolo()+" "+stelle[0]+" stelle" +
                 "\n"+listaPref[1].getTitolo()+" "+stelle[1]+" stelle";
+    }
+
+    public Prodotto[] getListaPref() {
+        return listaPref;
+    }
+
+    @Override
+    public String toString() {
+        return "UtenteStandard{" +
+                "stelle=" + Arrays.toString(stelle) +
+                ", countp=" + countp +
+                ", counts=" + counts +
+                ", listaPref=" + Arrays.toString(listaPref) +
+                ", utente=" + utente +
+                ", s=" + s +
+                '}';
     }
 }
