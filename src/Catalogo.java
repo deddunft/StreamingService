@@ -30,9 +30,9 @@ public class Catalogo {
         Prodotto[] prefe = new Prodotto[3];
         for (int i = 0; i < utente.getListaPref().length; i++)
             for (int j = 0; j < utente2.getListaPref().length; j++)
+                if (utente.getListaPref()[i].getTitolo() == utente2.getListaPref()[i].getTitolo()||utente.getStelle()>3&&utente2.getStelle()>3){
+                    Lista preflist1 =new Lista(utente);
 
-
-                if (utente.getListaPref()[i].getTitolo() == utente2.getListaPref()[j].getTitolo()){
                     prefe[i] = utente.getListaPref()[i];
                 }
         return prefe;
